@@ -1,22 +1,121 @@
-footer {
-  background-color: #ffd042;
-  height: 80px;
-  display: flex;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-  span {
-    padding-right: 20px;
-  }
 
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+placeholder{
+	color: #000;
 }
+.style {
+	font-family: Open Sans;
+	font-size: 16px;
+	line-height: 22px;
+	color: #FFFFFF;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+
+.titstyle {
+	color: #AAAAAA;
+	font-family: Open Sans;
+	font-size: 16px;
+	line-height: 22px;
+
+}
+.footer {
+	margin-top: 155px;
+	background-color: #434343;
+	
+	&__container {
+		max-width: 1180px;
+		margin: 0px auto;
+		padding: 100px 0px;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	&__navigator-title {
+		margin-bottom: 23px;
+		&::after {
+			content: " ";
+			display: block;
+			width: 380px;
+			height: 1px;
+			background: #666666;
+			margin-top: 23px;
+		}
+	}
+
+	&__navigator-item {
+		margin-bottom: 15px;
+	}
+
+	&__information-title {
+		margin-bottom: 23px;
+		&::after {
+			content: " ";
+			display: block;
+			width: 380px;
+			height: 1px;
+			background: #666666;
+			margin-top: 23px;
+		}
+	}
+
+
+	&__information-item {
+		margin-bottom: 15px;
+	}
+
+	&__connect-title {
+		margin-bottom: 23px;
+		&::after {
+			content: " ";
+			display: block;
+			width: 380px;
+			height: 1px;
+			background: #666666;
+			margin-top: 23px;
+		}
+	}
+
+	&__connect-email {
+		background-color: #666666;
+		width: 299px;
+		height: 40px;
+		padding: 9px 0px 9px 15px;
+		color: #EBEBEB;
+	}
+
+	&__connect-button {
+		font-family: Open Sans;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 22px;
+		color: #FFFFFF;
+		background-color: #000000;
+		padding: 9px 22px;
+	}
+
+	&__connect-list {
+		display: flex;
+		margin-top: 25px;
+	}
+
+	&__connect-link {
+		i {
+			color: #FFFFFF;
+			background: #666666;
+			border-radius: 15px;
+			padding: 10px;
+			margin-right: 10px;
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+}
+

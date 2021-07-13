@@ -3,23 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 
-.catalog {
-	max-width: 1177px;
-	margin: 60px auto;
+.blog {
+	max-width: 1180px;
+	margin: 0px auto;
 	&__title {
 		font-family: Montserrat;
 		font-size: 40px;
 		font-weight: 700;
 		line-height: 49px;
 		text-transform: uppercase;
+		margin-bottom: 15px;
 	}
 
 	&__aside {
+		margin-bottom: 50px;
 		display: flex;
-		margin: 15px 0px 55px 0px;
 		img {
 			margin: 0px 20px;
-
 		}
 	}
 
@@ -29,67 +29,74 @@
 		font-style: italic;
 		line-height: 25px;
 		text-transform: capitalize;
-		color: black;
-		
+		color: #1E0606;
 		&:hover {
-			opacity: 0.6;
-		}
-	}
-
-	&__images {
-		margin-bottom: 23px;
-		img {
-			&:nth-child(1) {
-				padding: 46px 18px;
-				background-color: #DBE4DB;
-			}
-			&:nth-child(2) {
-				padding: 13px 36px;
-				background-color: #EADDD3;
-				margin: 0px 20px;
-			}
-		}
-	}
-
-	&__imag {
-		text-align: right;
-		margin-right: 100px;
-		img {
-			&:nth-child(1) {
-				padding: 10px 20px;
-				background-color: #D5D4E1;
-			}
-			&:nth-child(2) {
-				background-color: #F3D0DB;
-				margin: 0px 20px;
-			}
-			&:nth-child(3) {
-				padding: 33px 5px;
-				background-color: #E5EAF8;
-			}
+			opacity: 0.5;
 		}
 	}
 
 	&__section {
-		margin: 55px auto;
-		max-width: 680px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 
-	&__section-subtitle {
-		font-family: Montserrat;
-		font-size: 38px;
-		font-weight: 700;
-		line-height: 46px;
-		margin-bottom: 25px;
-
+	&__content {
+		max-width: 380px;
+		margin-bottom: 30px;
+		&:nth-child(2) {
+			margin: 0px 20px;
+		}
+		&:nth-child(5) {
+			margin: 0px 20px;
+		}
 	}
 
-	&__section-text {
+
+	&__data {
 		font-family: Open Sans;
 		font-size: 16px;
 		line-height: 22px;
+		color: #818181;
+		margin: 20px 0px 7px 0px;
+	}
+
+	&__subtitle {
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 31px;
+		margin-bottom: 15px;
+
+	}
+
+	&__text {
+		font-family: Open Sans;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	&__controls {
+		margin-top: 55px;
+		text-align: center;
+	}
+
+	&__link {
+		font-family: Montserrat;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #1E0606;
+		&:nth-child(2) {
+			margin: 0px 65px;
+		}
 		&:nth-child(3) {
-			margin: 15px 0px;
+			margin-right: 60px;
+		}
+		&:hover {
+			color: #C29974;
 		}
 	}
+	
 }
+

@@ -1,24 +1,76 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
-  display: flex;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-  span {
-    padding-right: 20px;
-  }
+$black: #000;
 
-  a {
-    color: #000;
-    text-decoration: none;
+.header {
+	max-width: 1177px;
+	margin: 50px auto 0px auto;
+	display: flex;
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+	&__title {
+		font-family: Montserrat;
+		font-size: 52px;
+		text-transform: uppercase;
+		color: $black;
+		&:hover {
+			opacity: 0.6;
+		}
+		&:active {
+			opacity: 0.3;
+		}
+	}
+
+	&__main {
+		margin-left: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 210px;
+		&-l {
+			font-family: Open Sans;
+			font-size: 14px;
+			line-height: 19px;
+			text-align: left;
+			color: $black;
+			&:hover {
+				opacity: 0.6;
+			}
+			&:active {
+				opacity: 0.3;
+			}
+		}
+	}
+
+	&__search {
+		display: flex;
+		align-items: center;
+		flex: 1 1 auto;
+		justify-content: flex-end;
+		&-button {
+			background: transparent;
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+		&:active {
+			opacity: 0.3;
+		}
+	}
+
+	&__contact {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-left: 23px;
+		font-family: Open Sans;
+		color: $black;
+		&:hover {
+			opacity: 0.6;
+		}
+		&:active {
+			opacity: 0.3;
+		}
+	}
 }
-
-

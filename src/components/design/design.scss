@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+.design {
+	max-width: 1180px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+
+
+	&__about {
+		background: #E1F0F7;
+		max-width: 483px;
+		padding: 0px 30px;
+		position: relative;
+	}
+
+	&__title {
+		font-family: Montserrat;
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 46px;
+		position: absolute;
+		top: -26px;
+	}
+
+	&__subtitle {
+		font-family: Crimson Text;
+		font-size: 26px;
+		font-style: italic;
+		line-height: 32px;
+		margin: 31px 0px 10px 0px;
+	}
+
+	&__text {
+		font-family: Open Sans;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__button {
+		font-family: Open Sans;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 22px;
+		padding: 9px 20px;
+		background-color: black;
+		color: white;
+		margin-top: 20px;
+	}
+
+	&__contacts {
+		background: #E1F0F7;
+		position: relative;
+		width: 483px;
+		padding: 0px 30px;
+		margin-right: 37px;
+		max-height: 228px;
+	}
+
+	&__contacts-title {
+		font-family: Montserrat;
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 46px;
+		position: absolute;
+		top: -26px;
+	}
+
+	&__contacts-text {
+		font-family: Open Sans;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 41px 0px 20px 0px;
+	}
+}

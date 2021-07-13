@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
-      </div>
-    </main>
-    @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link href="/common.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/static/fonts/oswald.css" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico">
+		<title>Каталог</title>
+	</head>
+	<body>
+		@@include('header/index.html')
+		<div class="catalog">
+			<h1 class="catalog__title">Category Products</h1>
+			<div class="catalog__aside">
+				<a href="" class="catalog__home">home</a>
+				<img src="../../static/images/Vector (Stroke).svg" alt="">
+				<a href="" class="catalog__home">Catalog</a>
+			</div>
+			<div class="catalog__images">
+				<img src="../../static/images/switer.jpg" alt="">
+				<img src="../../static/images/sock.jpg" alt="">
+				<img src="../../static/images/toy.jpg" alt="">
+			</div>
+			<div class="catalog__imag">
+				<img src="../../static/images/accesory.jpg" alt="">
+				<img src="../../static/images/sale.jpg" alt="">
+				<img src="../../static/images/short.jpg" alt="">
+			</div>
+			<section class="catalog__section">
+				<h2 class="catalog__section-subtitle">Product Description</h2>
+				<p class="catalog__section-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+				<p class="catalog__section-text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+				<p class="catalog__section-text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+			</section>
+		</div>
+		@@include('footer/index.html')
+		<script src="index.js"></script>
+	</body>
 </html>
