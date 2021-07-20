@@ -28,18 +28,26 @@ $black: #000;
 		align-items: center;
 		justify-content: space-between;
 		width: 210px;
-		&-l {
-			font-family: Open Sans;
-			font-size: 14px;
-			line-height: 19px;
-			text-align: left;
-			color: $black;
-			&:hover {
-				opacity: 0.6;
-			}
-			&:active {
-				opacity: 0.3;
-			}
+	}
+	&__list {
+		display: flex;
+	}
+	&__item {
+		&:nth-child(2) {
+			margin: 0 20px;
+		}
+	}
+	&__main-l {
+		font-family: Open Sans;
+		font-size: 14px;
+		line-height: 19px;
+		text-align: left;
+		color: $black;
+		&:hover {
+			opacity: 0.6;
+		}
+		&:active {
+			opacity: 0.3;
 		}
 	}
 

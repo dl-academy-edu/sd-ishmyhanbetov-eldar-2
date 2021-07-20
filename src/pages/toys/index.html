@@ -14,10 +14,46 @@
 	</head>
 	<body>
 		@@include('header/index.html')
-		@@include('billboard/index.html')
-		@@include('category/index.html')
-		@@include('delivery/index.html')
-		@@include('design/index.html')
+		<div class="toys">
+			<h1 class="toys__title">Category Products</h1>
+			<div class="toys__aside">
+				<a href="" class="toys__home">home</a>
+				<img src="../../static/images/Vector (Stroke).svg" alt="">
+				<a href="" class="toys__home">Catalog</a>
+			</div>
+			<menu class="toys__menu">
+				<form action="" class="toys__form">
+					<div class="toys__cost">
+						<h6 class="toys__subtitle">cost</h6>
+						<input class="toys__range" type="range">
+						<p class="toys__tip">0</p>
+						<p class="toys__tip">500</p>
+					</div>
+					<div class="toys__color">
+						<h6 class="toys__subtitle">color</h6>
+						<ul class="toys__list">
+							<li class="toys__item"><input type="checkbox">black</li>
+							<li class="toys__item"><input type="checkbox">blue</li>
+							<li class="toys__item"><input type="checkbox">green</li>
+							<li class="toys__item"><input type="checkbox">white</li>
+						</ul>
+					</div>
+					<div class="toys__delivery">
+						<h6 class="toys__subtitle">delivery</h6>
+						<ul class="toys__lst">
+							<li class="toys__itm"><input type="radio">Free shipping</li>
+							<li class="toys__itm"><input type="radio">Fast shipping</li>
+						</ul>
+					</div>
+					<div class="toys__amount">
+						
+					</div>
+					
+				</form>
+				
+			</menu>
+		</div>
+		
 		@@include('footer/index.html')
 	</body>
 </html>

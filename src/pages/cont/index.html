@@ -21,14 +21,23 @@
 				<img src="../../static/images/Vector (Stroke).svg" alt="">
 				<a href="" class="cont__home">Contact us</a>
 			</div>
-			<form action="#" class="cont__form">
-				<div class="cont__tooltip">name</div>
-				<input type="text" class="cont__name">
-				<div class="cont__tooltip">phone</div>
-				<input type="tel" class="cont__phone">
-				<div class="cont__tooltip">Messege</div>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
-			</form>
+			<div class="cont__page">
+				<form action="#" class="cont__form">
+					<div class="cont__tooltip">name</div>
+					<input type="text" class="cont__name" placeholder="Ivan Ivanov">
+					<div class="cont__tooltip">phone</div>
+					<input type="tel" class="cont__phone">
+					<div class="cont__tooltip">Messege</div>
+					<textarea name="" id="" class="cont__textarea" ></textarea>
+					<div class="cont__checkbox"><input type="checkbox" checked="checked"><span>By clicking on the button, you consent to the processing of your personal data</span></div>
+					<button class="cont__button">submit</button>
+				</form>
+				<section class="cont__section">
+					<div class="cont__text">Our support team are on-hand to assist with any issues you are experiencing.</div>
+					<div class="cont__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</div>
+					<div class="cont__text">An expert is waiting to help you!</div>
+				</section>
+			</div>
 		</div>
 		@@include('footer/index.html')
 	</body>

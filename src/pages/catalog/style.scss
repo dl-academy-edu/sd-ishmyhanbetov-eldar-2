@@ -36,38 +36,33 @@
 		}
 	}
 
-	&__images {
-		margin-bottom: 23px;
-		img {
-			&:nth-child(1) {
-				padding: 46px 18px;
-				background-color: #DBE4DB;
-			}
-			&:nth-child(2) {
-				padding: 13px 36px;
-				background-color: #EADDD3;
-				margin: 0px 20px;
-			}
-		}
+	&__kids {
+		padding: 46px 18px;
+		background: #DBE4DB;
 	}
 
-	&__imag {
+	&__shop {
+		margin: 0px 20px;
+		background: #EADDD3;
+		padding: 13px 36px;
+	}
+
+	&__secondblock {
 		text-align: right;
 		margin-right: 100px;
-		img {
-			&:nth-child(1) {
-				padding: 10px 20px;
-				background-color: #D5D4E1;
-			}
-			&:nth-child(2) {
-				background-color: #F3D0DB;
-				margin: 0px 20px;
-			}
-			&:nth-child(3) {
-				padding: 33px 5px;
-				background-color: #E5EAF8;
-			}
-		}
+		margin-top: 23px;
+	}
+
+	&__acessories {
+		padding: 10px 20px;
+		background: #D5D4E1;
+	}
+	&__sale {
+		margin: 0px 20px;
+	}
+	&__adults {
+		background: #E5EAF8;
+		padding: 32px 5px;
 	}
 
 	&__section {
