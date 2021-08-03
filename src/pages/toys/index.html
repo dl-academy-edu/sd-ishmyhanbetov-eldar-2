@@ -20,14 +20,15 @@
 				<a href="" class="toys__home">home</a>
 				<img src="../../static/images/Vector (Stroke).svg" alt="">
 				<a href="" class="toys__home">Catalog</a>
+				<img src="../../static/images/Vector (Stroke).svg" alt="">
+				<a href="" class="toys__home">toys</a>
 			</div>
-			<menu class="toys__menu">
+			<nav class="toys__menu">
 				<form action="" class="toys__form">
 					<div class="toys__cost">
-						<h6 class="toys__subtitle">cost</h6>
-						<input class="toys__range" type="range">
-						<p class="toys__tip">0</p>
-						<p class="toys__tip">500</p>
+						<h6 class="toys__subtitle range">cost</h6>
+						<span class="toys__tip">0</span>
+						<span class="toys__tip">500</span>
 					</div>
 					<div class="toys__color">
 						<h6 class="toys__subtitle">color</h6>
@@ -39,21 +40,83 @@
 						</ul>
 					</div>
 					<div class="toys__delivery">
-						<h6 class="toys__subtitle">delivery</h6>
+						<h6 class="toys__subtitle">Delivery</h6>
 						<ul class="toys__lst">
 							<li class="toys__itm"><input type="radio">Free shipping</li>
 							<li class="toys__itm"><input type="radio">Fast shipping</li>
 						</ul>
 					</div>
 					<div class="toys__amount">
-						
+						<h6 class="toys__subtitle">amount</h6>
+						<button class="toys__button">0-5</button>
+						<button class="toys__button">10-20</button>
+						<button class="toys__button">20-50</button>
+						<button class="toys-apply__button">apply</button>
 					</div>
-					
 				</form>
-				
-			</menu>
+			</nav>
+			<div class="toys-catalog">
+				<div class="toys-catalog__block">
+					<div class="toys-catalog__img">
+						<img src="../../static/images/acool.jpg">
+					</div>
+					<div class="toys-catalog__title">SHARKY BEAN BAG CHAIR COVER</div>
+					<div class="toys-catalog__cost">$60.00 USD</div>
+				</div>
+				<div class="toys-catalog__block">
+					<div class="toys-catalog__img">
+						<img src="../../static/images/thing.jpg">
+					</div>
+					<div class="toys-catalog__title">BRASS DECO FRAMES</div>
+					<div class="toys-catalog__cost">$66.00 USD</div>
+				</div>
+				<div class="toys-catalog__block">
+					<div class="toys-catalog__img">
+						<img src="../../static/images/something.jpg">
+					</div>
+					<div class="toys-catalog__title">CIBO FULL APRON</div>
+					<div class="toys-catalog__cost">$60.00 USD</div>
+				</div>
+				<div class="toys-catalog__block">
+					<div class="toys-catalog__img">
+						<img src="../../static/images/present.jpg">
+					</div>
+					<div class="toys-catalog__title">GATCHA GATCHA GUMBALL MACHINE</div>
+					<div class="toys-catalog__cost">$56.00 USD</div>
+				</div>
+				<div class="toys-catalog__block">
+					<div class="toys-catalog__img">
+						<img src="../../static/images/vedro.jpg">
+					</div>
+					<div class="toys-catalog__title">CHRISTMAS ADVENT SCENTED CANDLE</div>
+					<div class="toys-catalog__cost">$29.00 USD</div>
+				</div>
+				<div class="toys-catalog__block">
+					<div class="toys-catalog__img">
+						<img src="../../static/images/light.jpg">
+					</div>
+					<div class="toys-catalog__title">TANGLE SPINNING TEA LIGHT</div>
+					<div class="toys-catalog__cost">$56.00 USD</div>
+				</div>
+			</div>
+			<nav class="toys-nav">
+				<ul class="toys-nav-list">
+					<li class="toys-nav-list__item">
+						<a href="" class="toys-nav-list__item-link">1</a>
+					</li>
+					<li class="toys-nav-list__item">
+						<a href="" class="toys-nav-list__item-link">2</a>
+					</li>
+					<li class="toys-nav-list__item">
+						<a href="" class="toys-nav-list__item-link">3</a>
+					</li>
+					<li class="toys-nav-list__item">
+						<a href="" class="toys-nav-list__item-link">4</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		
 		@@include('footer/index.html')
+		<script src="https://kit.fontawesome.com/1608246916.js" crossorigin="anonymous"></script>
 	</body>
 </html>
