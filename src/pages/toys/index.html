@@ -27,23 +27,36 @@
 				<form action="" class="toys__form">
 					<div class="toys__cost">
 						<h6 class="toys__subtitle range">cost</h6>
-						<span class="toys__tip">0</span>
-						<span class="toys__tip">500</span>
+						<input type="range">
+						<span class="toys__0">0</span>
+						<span class="toys__500">500</span>
 					</div>
 					<div class="toys__color">
 						<h6 class="toys__subtitle">color</h6>
 						<ul class="toys__list">
-							<li class="toys__item"><input type="checkbox">black</li>
-							<li class="toys__item"><input type="checkbox">blue</li>
-							<li class="toys__item"><input type="checkbox">green</li>
-							<li class="toys__item"><input type="checkbox">white</li>
+							<li class="toys__item">
+								<input class="item__checkbox" type="checkbox" id="cb1"> <label class="item__label" for="cb1">Black</label>
+							</li>
+							<li class="toys__item">
+								<input class="item__checkbox" type="checkbox" id="cb2"> <label class="item__label" for="cb2">Blue</label>
+							</li>
+							<li class="toys__item">
+								<input class="item__checkbox" type="checkbox" id="cb3"> <label class="item__label" for="cb3">Green</label>
+							</li>
+							<li class="toys__item">
+								<input class="item__checkbox" type="checkbox" id="cb4"> <label class="item__label" for="cb4">White</label>
+							</li>
 						</ul>
 					</div>
 					<div class="toys__delivery">
 						<h6 class="toys__subtitle">Delivery</h6>
 						<ul class="toys__lst">
-							<li class="toys__itm"><input type="radio">Free shipping</li>
-							<li class="toys__itm"><input type="radio">Fast shipping</li>
+							<li class="toys__itm">
+								<input class="itm__radio" type="radio" name="rb" id="rb1" checked> <label class="itm__label" for="rb1">Free shipping</label>
+							</li>
+							<li class="toys__itm">
+								<input class="itm__radio" type="radio" name="rb" id="rb2"> <label class="itm__label" for="rb2">Fast shipping</label>
+							</li>
 						</ul>
 					</div>
 					<div class="toys__amount">
