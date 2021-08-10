@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link href="/common.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/static/fonts/oswald.css" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico">
+		<title>Контакты</title>
+	</head>
+	<body>
+		@@include('header/index.html')
+		<div class="wrapper">
+			<div class="wrapper__block">
+				<h1 class="wrapper__title">Animation scene</h1>
+				<div class="wrapper__aside">
+					<a href="" class="wrapper__home">home</a>
+					<img src="../../static/images/Vector (Stroke).svg" alt="">
+					<a href="" class="wrapper__home">Animation</a>
+				</div>
+			</div>
+			<div class="wrapper__container">
+				<picture class="wrapper__cars">
+					<img src="../../static/images/animation/Carone.png" alt="">
+					<img src="../../static/images/animation/Cartwo.png" alt="">
+					<img src="../../static/images/animation/Carthree.png" alt="">
+					<img src="../../static/images/animation/Carfour.png" alt="">
+				</picture>
+				<!-- <picture class="wrapper__picture">
+					<img src="../../static/images/animation/Body.png" alt="#">
+					<img src="../../static/images/animation/Suitcases.png" alt="#">
+					<img src="../../static/images/animation/man.png" alt="#">
+					<img src="../../static/images/animation/Lantern.png" alt="#">
+				</picture> -->
+			</div>
+		</div>
+		@@include('footer/index.html')
+		<script src="https://kit.fontawesome.com/1608246916.js" crossorigin="anonymous"></script>
+	</body>
+</html>
