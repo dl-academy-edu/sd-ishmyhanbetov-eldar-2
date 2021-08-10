@@ -64,13 +64,13 @@
 				width: 203px;
 				top: 477px;
 				left: 382px;
-				transition: right 0.4s ease-in 0.4s;
-				-webkit-transition: right 0.4s ease-in 0.4s;
-				-moz-transition: right 0.4s ease-in 0.4s;
-				-ms-transition: right 0.4s ease-in 0.4s;
-				-o-transition: right 0.4s ease-in 0.4s;
+				transition: left 0.4s ease-in 0.4s;
+				-webkit-transition: left 0.4s ease-in 0.4s;
+				-moz-transition: left 0.4s ease-in 0.4s;
+				-ms-transition: left 0.4s ease-in 0.4s;
+				-o-transition: left 0.4s ease-in 0.4s;
 				&:hover {
-					right: 40px;
+					left: 500px;
 				}
 			}
 			&:nth-child(3) {
@@ -85,7 +85,7 @@
 				-ms-transition: left 0.4s ease-in 0.4s;
 				-o-transition: left 0.4s ease-in 0.4s;
 				&:hover {
-					left: 40px;
+					left: 850px;
 				}
 			}
 			&:nth-child(4) {
@@ -100,7 +100,7 @@
 				-ms-transition: left 0.4s ease-in 0.4s;
 				-o-transition: left 0.4s ease-in 0.4s;
 				&:hover {
-					left: 40px;
+					left: 1400px;
 				}
 			}
 		}
