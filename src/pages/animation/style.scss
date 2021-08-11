@@ -40,10 +40,11 @@
 	}
 
 	&__cars {
-		z-index: 1;
+		z-index: 0;
 		position: relative;
 		img {
 			&:nth-child(1) {
+				z-index: 0;
 				position: absolute;
 				height: 99px;
 				width: 250px;
@@ -59,6 +60,7 @@
 				}
 			}
 			&:nth-child(2) {
+				z-index: 0;
 				position: absolute;
 				height: 95px;
 				width: 203px;
@@ -74,6 +76,7 @@
 				}
 			}
 			&:nth-child(3) {
+				z-index: 0;
 				position: absolute;
 				height: 65px;
 				width: 246px;
@@ -89,6 +92,7 @@
 				}
 			}
 			&:nth-child(4) {
+				z-index: 0;
 				position: absolute;
 				height: 126px;
 				width: 269px;
@@ -108,7 +112,33 @@
 	}
 
 	&__picture {
-		z-index: 4;
+		position: relative;
+		img {
+			&:nth-child(1) {
+				position: absolute;
+				top: 470px;
+				left: 182px;
+				z-index: 10;
+			}
+			&:nth-child(2) {
+				position: absolute;
+				top: 642px;
+				left: 182px;
+				z-index: 10;
+			}
+			&:nth-child(3) {
+				position: absolute;
+				top: 385px;
+				left: 288px;
+				z-index: 10;
+			}
+			&:nth-child(4) {
+				position: absolute;
+				top: 170px;
+				left: 1050px;
+				z-index: 10;
+			}
+		}
 	}
 }
 
