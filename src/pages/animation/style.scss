@@ -111,32 +111,79 @@
 
 	}
 
-	&__picture {
+	&__list {
 		position: relative;
-		img {
-			&:nth-child(1) {
+	}
+	&__item {
+		&:nth-child(1) {
+			position: absolute;
+			top: 455px;
+			left: 182px;
+			z-index: 10;
+			&::before {
+				content: "Джеси, смотри, такси едет!";
+				background: url(../../static/images/animation/Vector1.svg);
+				display: block;
+				width: 160px;
+				height: 99px;
 				position: absolute;
-				top: 470px;
-				left: 182px;
-				z-index: 10;
+				top: -100px;
+				right: 25px;
+				padding: 17px;
+				font-family: Open Sans;
+				font-size: 16px;
+				line-height: 22px;
 			}
-			&:nth-child(2) {
+		}
+		&:nth-child(2) {
+			position: absolute;
+			top: 642px;
+			left: 182px;
+			z-index: 10;
+		}
+		&:nth-child(3) {
+			position: absolute;
+			top: 385px;
+			left: 288px;
+			z-index: 10;
+			&::before {
+				content: "Эй, такси, такси!";
+				background: url(../../static/images/animation/Vector2.svg);
+				display: block;
+				width: 160px;
+				height: 77px;
 				position: absolute;
-				top: 642px;
-				left: 182px;
-				z-index: 10;
+				top: -80px;
+				right: 60px;
+				padding: 17px;
+				font-family: Open Sans;
+				font-size: 16px;
+				line-height: 22px;
 			}
-			&:nth-child(3) {
+		}
+		&:nth-child(4) {
+			position: absolute;
+			top: 170px;
+			left: 1050px;
+			z-index: 10;
+		}
+		&:nth-child(5) {
+			position: absolute;
+			top: 410px;
+			left: 563px;
+			&::before {
+				content: "Я вообще-то не за вами!";
+				background: url(../../static/images/animation/Vector1.svg);
+				display: block;
+				width: 160px;
+				height: 99px;
 				position: absolute;
-				top: 385px;
-				left: 288px;
-				z-index: 10;
-			}
-			&:nth-child(4) {
-				position: absolute;
-				top: 170px;
-				left: 1050px;
-				z-index: 10;
+				top: -45px;
+				left: 310px;
+				padding: 17px;
+				font-family: Open Sans;
+				font-size: 16px;
+				line-height: 22px;
 			}
 		}
 	}
