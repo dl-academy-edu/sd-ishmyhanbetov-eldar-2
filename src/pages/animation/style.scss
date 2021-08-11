@@ -38,18 +38,6 @@
 	}
 }
 
-@keyframes female {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
 @keyframes car {
 	0% {
 		left: 1400px;
@@ -191,7 +179,7 @@
 				font-family: Open Sans;
 				font-size: 16px;
 				line-height: 22px;
-				animation-name: female;
+				animation-name: male;
 				animation-delay: 0s;
 				animation-duration: 2s;
 				animation-fill-mode: forwards;
@@ -221,7 +209,7 @@
 				font-family: Open Sans;
 				font-size: 16px;
 				line-height: 22px;
-				animation-name: female;
+				animation-name: male;
 				animation-delay: 2s;
 				animation-duration: 4s;
 				animation-fill-mode: both;
