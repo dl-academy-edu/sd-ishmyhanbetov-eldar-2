@@ -1,3 +1,80 @@
+@keyframes one-car {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100px;
+	}
+}
+
+@keyframes two-car {
+	from {
+		left: 382px;
+	}
+
+	to {
+		left: 462px;
+	}
+}
+
+@keyframes three-car {
+	from {
+		left: 687px;
+	}
+
+	to {
+		left: 1126px;
+	}
+}
+
+@keyframes four-car {
+	from {
+		left: 1243px;
+	}
+
+	to {
+		left: 1300px;
+	}
+}
+
+@keyframes female {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes car {
+	0% {
+		left: 1400px;
+	}
+
+	100% {
+		left: -1000px;
+	}
+}
+
+@keyframes male {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+
 .wrapper {
 	overflow: hidden;
 	&__block {
@@ -50,14 +127,9 @@
 				width: 250px;
 				top: 477px;
 				left: -55px;
-				transition: left 0.4s ease-in 0.4s;
-				-webkit-transition: left 0.4s ease-in 0.4s;
-				-moz-transition: left 0.4s ease-in 0.4s;
-				-ms-transition: left 0.4s ease-in 0.4s;
-				-o-transition: left 0.4s ease-in 0.4s;
-				&:hover {
-					left: 40px;
-				}
+				animation-name: one-car;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
 			}
 			&:nth-child(2) {
 				z-index: 0;
@@ -66,14 +138,9 @@
 				width: 203px;
 				top: 477px;
 				left: 382px;
-				transition: left 0.4s ease-in 0.4s;
-				-webkit-transition: left 0.4s ease-in 0.4s;
-				-moz-transition: left 0.4s ease-in 0.4s;
-				-ms-transition: left 0.4s ease-in 0.4s;
-				-o-transition: left 0.4s ease-in 0.4s;
-				&:hover {
-					left: 500px;
-				}
+				animation-name: two-car;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
 			}
 			&:nth-child(3) {
 				z-index: 0;
@@ -82,14 +149,10 @@
 				width: 246px;
 				top: 520px;
 				left: 687px;
-				transition: left 0.4s ease-in 0.4s;
-				-webkit-transition: left 0.4s ease-in 0.4s;
-				-moz-transition: left 0.4s ease-in 0.4s;
-				-ms-transition: left 0.4s ease-in 0.4s;
-				-o-transition: left 0.4s ease-in 0.4s;
-				&:hover {
-					left: 850px;
-				}
+				animation-name: three-car;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+
 			}
 			&:nth-child(4) {
 				z-index: 0;
@@ -98,17 +161,11 @@
 				width: 269px;
 				top: 460px;
 				left: 1243px;
-				transition: left 0.4s ease-in 0.4s;
-				-webkit-transition: left 0.4s ease-in 0.4s;
-				-moz-transition: left 0.4s ease-in 0.4s;
-				-ms-transition: left 0.4s ease-in 0.4s;
-				-o-transition: left 0.4s ease-in 0.4s;
-				&:hover {
-					left: 1400px;
-				}
+				animation-name: four-car;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
 			}
 		}
-
 	}
 
 	&__list {
@@ -120,6 +177,7 @@
 			top: 455px;
 			left: 182px;
 			z-index: 10;
+			
 			&::before {
 				content: "Джеси, смотри, такси едет!";
 				background: url(../../static/images/animation/Vector1.svg);
@@ -133,6 +191,10 @@
 				font-family: Open Sans;
 				font-size: 16px;
 				line-height: 22px;
+				animation-name: female;
+				animation-delay: 0s;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
 			}
 		}
 		&:nth-child(2) {
@@ -148,7 +210,7 @@
 			z-index: 10;
 			&::before {
 				content: "Эй, такси, такси!";
-				background: url(../../static/images/animation/Vector2.svg);
+				background: url(../../static/images/animation/Vector2.svg) no-repeat;
 				display: block;
 				width: 160px;
 				height: 77px;
@@ -159,6 +221,11 @@
 				font-family: Open Sans;
 				font-size: 16px;
 				line-height: 22px;
+				animation-name: female;
+				animation-delay: 2s;
+				animation-duration: 4s;
+				animation-fill-mode: both;
+
 			}
 		}
 		&:nth-child(4) {
@@ -170,7 +237,10 @@
 		&:nth-child(5) {
 			position: absolute;
 			top: 410px;
-			left: 563px;
+			left: 1400px;
+			animation-name: car;
+			animation-duration: 20s;
+			animation-delay: 4s;
 			&::before {
 				content: "Я вообще-то не за вами!";
 				background: url(../../static/images/animation/Vector1.svg);
@@ -184,8 +254,13 @@
 				font-family: Open Sans;
 				font-size: 16px;
 				line-height: 22px;
+				animation-name: male;
+				animation-duration: 4s;
+				animation-delay: 7s;
+				animation-fill-mode: both;
 			}
-		}
+			
+}
 	}
 }
 
