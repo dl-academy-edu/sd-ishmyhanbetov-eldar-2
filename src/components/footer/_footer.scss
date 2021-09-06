@@ -13,6 +13,19 @@
 		max-width: 1180px;
 		margin: 0 auto;
 		box-sizing: border-box;
+		width: 100%;
+		position: relative;
+		&::after {
+			content: " ";
+			display: block;
+			width: 100%;
+			max-width: 1180px;
+			height: 1px;
+			background: #666666;
+			position: absolute;
+			bottom: 55px;
+			left: 0;
+		}
 	}
 }
 .footer-links {
@@ -29,7 +42,8 @@
 			&::after {
 				content: " ";
 				display: block;
-				width: 380px;
+				width: 100%;
+				max-width: 380px;
 				height: 1px;
 				background: #666666;
 				margin-top: 23px;
@@ -37,19 +51,17 @@
 		}
 
 		&__form {
-			&:hover {
-				border: 1px solid white;
-			}
-			&:active {
-				border: 1px solid white;
-			}
+			max-width: 380px;
+			width: 100%;
+			position: relative;
+			max-height: 40px;
 		}
 
 		&__email {
 			background: #666666;
 			padding: 9px 0px 9px 15px;
-			width: 300px;
-			height: 40px;
+			max-width: 299px;
+			height: 100%;
 
 			&::placeholder {
 				color: #EBEBEB;
@@ -57,12 +69,12 @@
 		}
 
 		&__button {
-			background-color: $black;
+			background-color: black;
 			color: #FFFFFF;
-			padding: 9px 23px;
 			font-weight: 700;
+			width: 20%;
+			height: 100%;
 			position: absolute;
-			height: 40px;
 		}
 
 		&__foot {
@@ -72,15 +84,7 @@
 			&:not(last-child) {
 				margin-top: 32px;
 			}
-			&::before {
-				content: " ";
-				display: block;
-				width: 394px;
-				height: 1px;
-				background: #666666;
-				margin-top: 23px;
-				margin-bottom: 23px;
-			}
+
 		}
 
 		&__lst {

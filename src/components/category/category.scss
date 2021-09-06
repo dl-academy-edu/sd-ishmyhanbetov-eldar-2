@@ -19,9 +19,13 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 38px;
+		width: 100%;
+		max-width: 1180px;
 	}
 
 	&__img {
+		max-width: 20%;
+		width: 280px;
 		&:first-child {
 			background-color: #DBE4DB;
 			padding: 46px 18px;
@@ -53,5 +57,11 @@
 		font-size: 16px;
 		line-height: 22px;
 		max-width: 580px;
+	}
+}
+
+@media (max-width: 768px) {
+	.category {
+		display: none;
 	}
 }

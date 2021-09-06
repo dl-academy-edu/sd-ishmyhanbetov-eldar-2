@@ -9,15 +9,13 @@
 	&__section {
 		display: flex;
 		margin-bottom: 91px;
+		justify-content: space-between;
 	}
 
 	&__photo {
-		margin-right: 120px;
+		margin-right: 56px;
 	}
 
-	&__block {
-		//
-	}
 
 	&__title {
 		font-family: Montserrat;
@@ -80,11 +78,19 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&__item {
 	}
 
 	&__link {
+	}
+}
+
+
+@media (max-width: 768px) {
+	.delivery {
+		display: none;
 	}
 }

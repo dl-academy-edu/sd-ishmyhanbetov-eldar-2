@@ -15,6 +15,7 @@
 		max-width: 483px;
 		padding: 0px 30px;
 		position: relative;
+		margin-right: 10px;
 	}
 
 	&__title {
@@ -54,10 +55,12 @@
 	&__contacts {
 		background: #E1F0F7;
 		position: relative;
-		width: 483px;
+		max-width: 483px;
 		padding: 0px 30px;
 		margin-right: 37px;
 		max-height: 228px;
+		margin-left: 10px;
+		
 	}
 
 	&__contacts-title {
@@ -74,5 +77,11 @@
 		font-size: 16px;
 		line-height: 22px;
 		margin: 41px 0px 20px 0px;
+	}
+}
+
+@media (max-width: 768px) {
+	.design {
+		display: none;
 	}
 }

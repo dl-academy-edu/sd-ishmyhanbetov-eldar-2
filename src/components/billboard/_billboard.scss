@@ -5,7 +5,7 @@
 $Montserrat: Montserrat;
 
 .billboard {
-	background-color: #EEE4DB;
+	background: #EEE4DB;
 	max-width: 1180px;
 	margin: 129px auto 0 auto;
 	
@@ -44,12 +44,25 @@ $Montserrat: Montserrat;
 			background-color: rgba(30, 6, 6, 0.6);
 		}
 	}
-
-	&__collection {
-		max-width: 307px;
-		margin-top: 75px;
-		margin-bottom: 89px;
+	&__block {
+		padding: 80px 0;
+		width: 100%;
+		max-width: 942px;
+		position: relative;
+		min-height: 372px;
 	}
+	&__collection {
+		width: 307px;
+	}
+	img {
+		position: absolute;
+		width: 635px;
+		max-width: 64%;
+		right: 0px;
+		bottom: 0;
+		height: 461px;
+	}
+
 
 
 	&__title {
@@ -79,14 +92,6 @@ $Montserrat: Montserrat;
 		padding: 9px 22px;
 	}
 
-	&__image{
-		position: absolute;
-		width: 635.49px;
-		height: 461px;
-		left: 580px;
-		top: 160px;
-	}
-
 	&__foot {
 		font-family: Open Sans;
 		font-size: 12px;
@@ -96,8 +101,15 @@ $Montserrat: Montserrat;
 		background-color: #C29974;
 		padding: 11px 0px;
 	}
+
 }
 
+
+@media (max-width: 768px) {
+	.billboard {
+		display: none;
+	}
+}
 
 
 
