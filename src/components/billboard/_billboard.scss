@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$Montserrat: Montserrat;
+
+.billboard {
+	background: #EEE4DB;
+	max-width: 1180px;
+	margin: 129px auto 0 auto;
+	
+	&__head {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__number {
+		margin-left: 28px;
+		margin-right: 44px;
+	}
+	&__numtitle {
+		margin: 17px 0px;
+		font-family: $Montserrat;
+		font-size: 60px;
+		font-weight: 300;
+		line-height: 73px;
+		color: rgba(30, 6, 6, 0.05);
+	}
+	&__strips {
+		display: flex;
+		flex-direction: column;
+	}
+	&__buttons {
+		width: 31px;
+		height: 3px;
+		background-color: #D6CAC2;
+		&:nth-child(2) {
+			margin: 11px 0px;
+		}
+		&:nth-child(3) {
+			margin-bottom: 11px;
+		}
+		&:hover {
+			background-color: rgba(30, 6, 6, 0.6);
+		}
+	}
+	&__block {
+		padding: 80px 0;
+		width: 100%;
+		max-width: 942px;
+		position: relative;
+		min-height: 372px;
+	}
+	&__collection {
+		width: 307px;
+	}
+	img {
+		position: absolute;
+		width: 635px;
+		max-width: 64%;
+		right: 0px;
+		bottom: 0;
+		height: 461px;
+	}
+
+
+
+	&__title {
+		font-family: $Montserrat;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 44px;
+	}
+
+	&__subtitle {
+		font-family: Crimson Text;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 25px;
+		margin-bottom: 20px;
+	}
+
+
+	&__button {
+		font-family: Open Sans;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+		color: #FFFFFF;
+		background-color: #000;
+		padding: 9px 22px;
+	}
+
+	&__foot {
+		font-family: Open Sans;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 16px;
+		text-align: center;
+		background-color: #C29974;
+		padding: 11px 0px;
+	}
+
+}
+
+
+
+

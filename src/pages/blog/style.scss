@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+.blog {
+	max-width: 1180px;
+	margin: 0px auto;
+	&__title {
+		font-family: Montserrat;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 49px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	&__aside {
+		margin-bottom: 50px;
+		display: flex;
+		img {
+			margin: 0px 20px;
+		}
+	}
+
+	&__home {
+		font-family: Crimson Text;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 25px;
+		text-transform: capitalize;
+		color: #1E0606;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&__section {
+		justify-items: center;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+		grid-template-rows: 1fr 1fr;
+
+	}
+
+	&__content {
+		max-width: 380px;
+		margin-bottom: 30px;
+		&:nth-child(2) {
+			margin: 0px 20px;
+		}
+		&:nth-child(5) {
+			margin: 0px 20px;
+		}
+	}
+
+
+	&__data {
+		font-family: Open Sans;
+		font-size: 16px;
+		line-height: 22px;
+		color: #818181;
+		margin: 20px 0px 7px 0px;
+	}
+
+	&__subtitle {
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 31px;
+		margin-bottom: 15px;
+
+	}
+
+	&__text {
+		font-family: Open Sans;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	&__controls {
+		margin-top: 55px;
+		text-align: center;
+	}
+
+	&__link {
+		font-family: Montserrat;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #1E0606;
+		&:nth-child(2) {
+			margin: 0px 65px;
+		}
+		&:nth-child(3) {
+			margin-right: 60px;
+		}
+		&:hover {
+			color: #C29974;
+		}
+	}
+	
+}
+

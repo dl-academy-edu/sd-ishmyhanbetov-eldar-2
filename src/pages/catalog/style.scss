@@ -1,3 +1,90 @@
-main.catalog-main {
- padding: 30px 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+.catalog {
+	max-width: 1177px;
+	margin: 60px auto;
+	&__title {
+		font-family: Montserrat;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 49px;
+		text-transform: uppercase;
+	}
+
+	&__aside {
+		display: flex;
+		margin: 15px 0px 55px 0px;
+		img {
+			margin: 0px 20px;
+
+		}
+	}
+
+	&__home {
+		font-family: Crimson Text;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 25px;
+		text-transform: capitalize;
+		color: black;
+		
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	&__kids {
+		padding: 46px 18px;
+		background: #DBE4DB;
+	}
+
+	&__shop {
+		margin: 0px 20px;
+		background: #EADDD3;
+		padding: 13px 36px;
+	}
+
+	&__secondblock {
+		text-align: right;
+		margin-right: 100px;
+		margin-top: 23px;
+	}
+
+	&__acessories {
+		padding: 10px 20px;
+		background: #D5D4E1;
+	}
+	&__sale {
+		margin: 0px 20px;
+	}
+	&__adults {
+		background: #E5EAF8;
+		padding: 32px 5px;
+	}
+
+	&__section {
+		margin: 55px auto;
+		max-width: 680px;
+	}
+
+	&__section-subtitle {
+		font-family: Montserrat;
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 46px;
+		margin-bottom: 25px;
+
+	}
+
+	&__section-text {
+		font-family: Open Sans;
+		font-size: 16px;
+		line-height: 22px;
+		&:nth-child(3) {
+			margin: 15px 0px;
+		}
+	}
 }

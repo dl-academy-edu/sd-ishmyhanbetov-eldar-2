@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+.delivery {
+	margin: 116px auto;
+	max-width: 1180px;
+
+
+	&__section {
+		display: flex;
+		margin-bottom: 91px;
+		justify-content: space-between;
+	}
+
+	&__photo {
+		margin-right: 56px;
+	}
+
+
+	&__title {
+		font-family: Montserrat;
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 46px;
+	}
+
+	&__subtitle {
+		font-family: Crimson Text;
+		font-size: 26px;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 32px;
+		&:hover {
+			padding: 11px 60px 11px 180px;
+			background-color: rgba(112, 187, 220, 0.2);
+		}
+
+	}
+
+	&__guarantee {
+		font-family: Crimson Text;
+		font-size: 26px;
+		font-style: italic;
+		line-height: 32px;
+		margin: 22px 0px;
+
+	}
+
+	&__credit {
+		font-family: Crimson Text;
+		font-size: 26px;
+		font-style: italic;
+		line-height: 32px;
+		margin-bottom: 22px ;
+	}
+	
+
+	&__text {
+		font-family: Open Sans;
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 20px;
+		max-width: 480px;
+	}
+
+	&__button {
+		font-family: Open Sans;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+		padding: 9px 22px;
+		color: white;
+		background-color: black;
+
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+
+

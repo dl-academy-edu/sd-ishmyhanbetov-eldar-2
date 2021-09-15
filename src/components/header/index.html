@@ -1,10 +1,33 @@
-<header>
-  <div class="container">
-    <span class="title-block title-block_one">
-      Header
-    </span>
-    <a href="/">Главная</a>
-    <a href="/pages/catalog">Каталог</a>
-    <a href="/pages/toys">Игрушки</a>
-  </div>
+<header class="header">
+	<a href="/" class="header__title">dlk</a>
+	<nav class="header-menu">
+		<input class="menu__inp" id="menu__toggle" type="checkbox" />
+		<label class="menu__btn" for="menu__toggle">
+		<span>menu</span>
+		</label>
+		<ul class="header-menu__list">
+			<li class="header-menu__item">
+				<a href="../../pages/blog/index.html" class="header-menu__link">blog</a>
+			</li>
+			<li class="header-menu__item">
+				<a href="../../pages/catalog/index.html" class="header-menu__link">catalog</a>
+			</li>
+			<li class="header-menu__item">
+				<a href="#" class="header-menu__link">about us</a>
+			</li>
+			<li class="header-menu__item">
+				<a href="../../pages/grid/index.html" class="header-menu__link">grid</a>
+			</li>
+			<li class="header-menu__item">
+				<a href="../../pages/animation/index.html" class="header-menu__link">animation</a>
+			</li>
+		</ul>
+	</nav>
+	<form action="#" class="header__search">
+		<input class="header__search-text" type="text" placeholder="Search">
+		<button class="header__search-button"><i class="fas fa-search"></i></button>
+	</form>
+	<a href="../../pages/cont/index.html" class="header__contact">contact us</a>
+
 </header>
+
